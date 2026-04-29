@@ -14,7 +14,6 @@
 - [Results](#results)
 - [Project Structure](#project-structure)
 - [Setup & Usage](#setup--usage)
-- [Scripts Reference](#scripts-reference)
 - [Tech Stack](#tech-stack)
 
 ---
@@ -116,19 +115,13 @@ Training uses a **two-phase transfer learning** strategy:
 
 ```
 kaggle/
-├── trainkaggle.py          # Main training pipeline (Phase 1 + Phase 2)
-├── evaluate_model.py       # Standalone evaluation & metrics generation
-├── diagnose.py             # Diagnostic checks (data leakage, class distribution, sanity)
-├── sanity_check.py         # Quick visual sanity check on data samples
-├── generate_report.py      # Auto-generates methodology_report.docx
-├── model.keras             # Trained model weights (best checkpoint)
-├── confusion_matrix.png    # Confusion matrix visualization
-├── training_history.png    # Accuracy & loss curves across all epochs
-├── sanity_check_all_classes.png  # Visual grid of all 5 defect classes
-├── sanity_check_normal.png       # Visual check for normal class samples
-├── methodology_report.docx       # Auto-generated technical report
-├── hackathon_pitch.md      # Full hackathon presentation script
-└── ui-ux.md                # Streamlit dashboard UI/UX design notes
+├── systematic-industrial-metal-surface-detection          # Main training pipeline (Phase 1 + Phase 2)
+├── sanity_check.py                                        # Quick visual sanity check on data samples
+├── generate_report.py                                     # Auto-generates methodology_report.docx
+├── model.keras                                            # Trained model weights (best checkpoint)
+├── confusion_matrix.png                                   # Confusion matrix visualization
+├── training_history.png                                   # Accuracy & loss curves across all epochs
+├── methodology_report.pdf                                 # Auto-generated technical report
 ```
 
 ---
